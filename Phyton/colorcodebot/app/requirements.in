@@ -1,0 +1,9 @@
+peewee
+apsw    # for peewee
+plumbum
+pyTelegramBotAPI
+strictyaml
+structlog
+weasyprint
+wrapt
+guesslang

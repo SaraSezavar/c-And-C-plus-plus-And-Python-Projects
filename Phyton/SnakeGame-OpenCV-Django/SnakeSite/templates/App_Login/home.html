@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block title%}
+    Home
+{%endblock%}
+{%block body_block%}
+{%if user.is_authenticated%}
+    <p> well come {{user.username}}</p>
+{%endif%}
+{%if records%}
+<i> top records list:</i>
+<div>
+    {%for record in records%}
+    <div> {{record.user}}: {{record.record}}</div>
+    {%endfor%}
+</div>
+{%endif%}
+{%endblock%}
