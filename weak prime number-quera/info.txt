@@ -1,0 +1,6 @@
+this program will show you that a number is weak prime number or not
+and even prime or not
+
+floor()==>[] : جزء صحیح
+
+sqrt()==>x**1/2 : جذر

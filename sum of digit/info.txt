@@ -1,0 +1,2 @@
+this program will separate the digit of the number
+ & then addition together

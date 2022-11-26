@@ -1,0 +1,129 @@
+:root {
+    /* css Variables */
+    --card-size: 195px;
+    --img-size: 130px;
+  
+    --text-large: 17px;
+    --text-medium: 14px;
+    --text-small: 12px;
+  
+    --font-regular: 400;
+    --font-light: 300;
+  
+    --text-color: #404040;
+    --price-green: #3f7e00;
+    --text-icon-color: #f2f2f2;
+    --separator-color: #e6e6e6;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url("./fonts/Vazir.ttf");
+  }
+  * {
+    font-family: "Vazir";
+  }
+  
+  .specialVendorCard {
+    width: var(--card-size);
+    background-color: #fff;
+    border-radius: 6px;
+    border: solid 0.5px var(--separator-color);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .specialVendorCard__imgWrapper {
+    width: inherit;
+    height: var(--img-size);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .specialVendorCard__img {
+    width: var(--card-size);
+    height: inherit;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .specialVendorCard__rating {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  
+  .specialVendorCard__rating--filled {
+    background: var(--price-green);
+    color: white;
+    border-radius: 6px;
+    padding: 0 4px;
+    font-size: var(--text-medium);
+  }
+  
+  .specialVendorCard__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 12px;
+    height: 110px;
+  }
+  
+  .specialVendorCard__title {
+    font-size: var(--text-large);
+    font-weight: var(--font-regular);
+    color: var(--text-color);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    position: relative;
+  }
+  
+  .specialVendorCard__subtitle {
+    font-size: var(--text-medium);
+    font-weight: var(--font-light);
+    color: var(--text-color);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .specialVendorCard__tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .meta {
+    font-size: var(--text-small);
+    font-weight: var(--font-regular);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+    height: 24px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: var(--text-icon-color);
+  }
+  
+  .meta__icon {
+    margin-left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .meta__fee {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
